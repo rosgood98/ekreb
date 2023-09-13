@@ -197,3 +197,8 @@ All good, this is expected! You've got plenty of options. First, check our works
 4. Scoring Criteria: Projects are evaluated based on functionality, code quality, organization, creativity, and technology choices. Additional bonus points are available for features like using React or React Native for the frontend, integrating a timer, providing hints, and more.
 5. Deliverables: Commit the code to a repository and include a README file with the applicant's full name, Vanderbilt email, a brief reflection on the code, and other relevant details. Additionally, fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSeFemYKfHXxmZGQbxmA_FCx8ar5h9ohPTcarUTXkSBXUqnYZQ/viewform?usp=sf_link) to let us know you are submitting the project. 
 6. Support & Resources: If stuck, applicants can attend workshops or office hours, or email Rana Dubauskas & Kyle Burgess at rana.s.dubauskas@vanderbilt.edu & kyle.m.burgess@vanderbilt.edu.
+
+#TODO
+Add CI/CD pipeline if possible
+Finish frontend
+Finish backend

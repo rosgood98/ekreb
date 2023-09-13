@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer'
-import '../styles/global.css'
+import '../styles/start.css'
 
 function Start() {
     return (
@@ -12,7 +12,9 @@ function Start() {
             <div>
                 <Link to="/game" className='start-button-text'>Start Game</Link>
             </div>
-            <Footer className='footer-message' /> {/* TODO: Fix style */}
+            <div className='footer-message'>
+                <Footer/> {/* TODO: Fix style */}
+            </div>
         </div>
     );
 }

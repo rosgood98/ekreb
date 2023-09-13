@@ -1,6 +1,8 @@
-.start-game-text {
-    text-align: center;
+.start-game-text button {
+    text-align: left;
     color: white;
+    border-color: white;
+    border: 5px;
 }
 
 .game-description-box {
@@ -10,6 +12,25 @@
 }
 
 .game-description-text {
-    color: rgba(128, 106, 106, 0.846);
+    color: #F5F5DC;
     text-align: center;
 }
+
+.word-display {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #16f82d;
+    font-size: 30px;
+}
+
+.input-bar {
+    width: 20%;
+    height: 25px;
+    background-color: #9a9393;
+}
+
+::placeholder {
+    color: rgb(254, 254, 254);
+    text-align: center;
+  }
