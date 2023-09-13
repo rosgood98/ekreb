@@ -1,0 +1,15 @@
+.start-game-text {
+    text-align: center;
+    color: white;
+}
+
+.game-description-box {
+    width: 35%;
+    position: absolute;
+    top: 10px;
+}
+
+.game-description-text {
+    color: rgba(128, 106, 106, 0.846);
+    text-align: center;
+}
