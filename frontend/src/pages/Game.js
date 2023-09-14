@@ -36,7 +36,7 @@ function Game() {
                     English word that has been scrambled. Your goal is to determine the unscrambled word and enter it. 
                 </p>
             </div>
-            {!hideButton && (<button className='start-game-text' onClick={ fetchWordFromBackend }>
+            {!hideButton && (<button onClick={ fetchWordFromBackend }>
                 Get Word
             </button>)}
             {scrambled && (
@@ -45,7 +45,10 @@ function Game() {
                 </div>
             )}
             {displayInputBar && (
-                <input type={ 'text' } placeholder='Enter the unscrambled word' className='input-bar' />
+                <div className='input-bar-container'>
+                    <div className='input-instructions'>Type your guess here</div>
+                    <input type={ 'text' } className='input-bar' />
+                </div>
             )}
             <div className='footer-message'>
                 <Footer/>

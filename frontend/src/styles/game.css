@@ -1,19 +1,26 @@
-.start-game-text button {
-    text-align: left;
-    color: white;
+button {
+    text-align: center;
+    color: black;
     border-color: white;
+    width: 5%;
+    height: 20px;
     border: 5px;
+    border-radius: 10px;
 }
 
 .game-description-box {
     width: 35%;
     position: absolute;
-    top: 10px;
+    top: 70px;
+    background-color: #F0EAD6;
+    border-radius: 25px;
 }
 
 .game-description-text {
-    color: #F5F5DC;
+    color: black;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .word-display {
@@ -24,13 +31,24 @@
     font-size: 30px;
 }
 
-.input-bar {
+.input-bar-container {
     width: 20%;
-    height: 25px;
-    background-color: #9a9393;
 }
 
-::placeholder {
-    color: rgb(254, 254, 254);
+.input-instructions {
     text-align: center;
-  }
+    color: #F0EAD6;
+    padding-bottom: 10px;
+}
+
+.input-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #9a9393;
+    border-radius: 25px;
+    text-align: center;
+}
+
+input, select, textarea {
+    color: #F0EAD6;
+}

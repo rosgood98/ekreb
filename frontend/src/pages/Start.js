@@ -9,7 +9,7 @@ function Start() {
             <div className="start-title">
                 'ekreb' - the word guessing game!
             </div>
-            <div>
+            <div className='start-button-container'>
                 <Link to="/game" className='start-button-text'>Start Game</Link>
             </div>
             <div className='footer-message'>
