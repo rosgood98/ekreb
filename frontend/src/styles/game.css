@@ -1,11 +1,19 @@
-button {
+.get-word-button {
     text-align: center;
-    color: black;
-    border-color: white;
-    width: 5%;
+    cursor: pointer;
+    width: 10%;
     height: 20px;
-    border: 5px;
-    border-radius: 10px;
+    border: 1px gray;
+    color: #F0EAD6;
+    background-color: #F0EAD6;
+    border-radius: 25px;
+    text-align: center;
+    height: 30px;
+}
+
+.get-word-text {
+    font-size: 20px;
+    color: black;
 }
 
 .game-description-box {
@@ -47,6 +55,7 @@ button {
     background-color: #9a9393;
     border-radius: 25px;
     text-align: center;
+    border: 1px gray;
 }
 
 input, select, textarea {

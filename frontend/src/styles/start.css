@@ -8,15 +8,13 @@
 .start-button-text {
     font-size: 25px;
     color: black;
-    text-align: center;
-    text-decoration: none;
-    width: inherit;
 }
 
 .start-button-container {
     color: #F0EAD6;
-    width: 15%;
+    width: 12%;
     background-color: #F0EAD6;
     border-radius: 25px;
     text-align: center;
+    height: 30px;
 }

@@ -6,7 +6,6 @@ import End from './pages/End';
 import './styles/start.css';
 
 function App() {
-  document.title = "'ekreb' - the word guessing game!";
   return (
       <div className="background">
         <Router>
