@@ -32,4 +32,10 @@ describe('Scramble Word', () => {
         const scrambledWord = scramble(originalWord);
         expect(scrambledWord).to.equal(originalWord);
     });
+    // check a 2 char scrambled word is separate from the original
+    it('should scramble a 1 char word to be the same word', () => {
+        const originalWord = 'hi';
+        const scrambledWord = scramble(originalWord);
+        expect(scrambledWord).to.not.equal(originalWord);
+    });
 });
