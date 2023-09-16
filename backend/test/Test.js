@@ -2,7 +2,7 @@ const express = require('express');
 const chai = require('chai');
 const expect = chai.expect;
 const request = require('supertest');
-const scramble = require('../src/services/Scramble')
+const scramble = require('../src/services/Scramble');
 
 const app = express();
 
