@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-const fetchWordFromExternalAPI = require('./services/ApiService');
+const fetchWordFromExternalAPI = require('./services/APIService');
 const scramble = require('./services/Scramble');
 
 app.use(cors());
@@ -13,7 +13,10 @@ const port = 8080;
 */
 app.get('/word', async (req, res) => {
   try {
-    const unscrambled = await fetchWordFromExternalAPI();
+    const length = req.query['length'];
+    console.log(length);
+    const unscrambled = await fetchWordFromExternalAPI(length);
+    console.log(unscrambled);
     const scrambled = await scramble(unscrambled);
     res.json({ unscrambled: unscrambled, scrambled: scrambled });
   } catch (error) {

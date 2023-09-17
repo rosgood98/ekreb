@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/custom-alert.css';
 
 function Alert({ message, onClose, status }) {
     // Determine the score text and its color based on the status
     let scoreText = '';
     let scoreTextClass = ''; // CSS class for score text
+    let gameOverTextClass = ''; 
   
     if (status === 'correct') {
       scoreText = '+1';
@@ -12,17 +14,23 @@ function Alert({ message, onClose, status }) {
     } else if (status === 'incorrect') {
       scoreText = '+0';
       scoreTextClass = 'red-text'; // Apply red color for incorrect status
+    } else if (status === 'game-over') {
+      gameOverTextClass = 'yellow-text';
     }
   
     return (
       <div className='alert-background'>
         <div className='alert-content'>
-          <p>
+          <p className={gameOverTextClass}>
             {message} <span className={scoreTextClass}>{scoreText}</span>
           </p>
-          <button className='close' onClick={onClose}>
-            <div>Close</div>
-          </button>
+          {status === 'game-over' ? (
+            <Link to='/end' className='view'>
+              <div>View</div>
+            </Link>) : (
+              <button className='close' onClick={onClose}>
+                <div>Close</div>
+              </button>)}
         </div>
       </div>
     );

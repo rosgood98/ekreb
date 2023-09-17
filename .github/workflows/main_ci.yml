@@ -29,6 +29,8 @@ jobs:
 
   frontend:
     runs-on: ubuntu-latest
+    env:
+      CI: false
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
