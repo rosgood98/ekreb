@@ -13,8 +13,9 @@
 .start-button-container {
     color: #F0EAD6;
     width: 12%;
+    padding-top: 7px;
     background-color: #F0EAD6;
     border-radius: 25px;
     text-align: center;
-    height: 30px;
+    height: 40px;
 }

@@ -12,7 +12,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Start />} />
             <Route exact path="/game" element={<Game />} />
-            <Route exact path="/end" element={<End />} />
+            <Route exact path="/end/:round/:score" element={<End />} />
           </Routes>
         </Router>
       </div>

@@ -3,13 +3,14 @@
     position: absolute;
     bottom: 40%;
     cursor: pointer;
-    width: 10%;
     border: 1px gray;
     color: #F0EAD6;
     background-color: #F0EAD6;
     border-radius: 25px;
     text-align: center;
-    height: 30px;
+    width: 12%;
+    padding-top: 2px;
+    height: 40px;
 }
 
 .get-word-text {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/custom-alert.css';
 
-function Alert({ message, onClose, status }) {
+function Alert({ message, onClose, status, data }) {
     // Determine the score text and its color based on the status
     let scoreText = '';
     let scoreTextClass = ''; // CSS class for score text
@@ -25,7 +25,7 @@ function Alert({ message, onClose, status }) {
             {message} <span className={scoreTextClass}>{scoreText}</span>
           </p>
           {status === 'game-over' ? (
-            <Link to='/end' className='view'>
+            <Link to={`/end/${data.round}/${data.score}`} className='close' >
               <div>View</div>
             </Link>) : (
               <button className='close' onClick={onClose}>

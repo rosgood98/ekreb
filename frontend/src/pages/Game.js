@@ -6,6 +6,7 @@ import '../styles/game.css';
 import '../styles/custom-alert.css';
 
 function Game() {
+    // State variables
     const [unscrambled, setUnscrambled] = useState(null);
     const [scrambled, setScrambled] = useState(null);
     const [hideButton, setHideButton] = useState(false);
@@ -109,7 +110,6 @@ function Game() {
             fetchWordFromBackend();
         }
     }, [lengthSliderValue]);
-    
 
     useEffect(() => {
         // When the current round changes, fetch a new word
@@ -214,7 +214,7 @@ function Game() {
                 <Alert message='Unknown error has occurred. Try again later.' onClose={ handleCloseAlertError } />
             )}
             {isGameOver && (
-                <Alert message='Game over! View results.' status='game-over' />
+                <Alert message='Game over! View results.' status='game-over' data={{ round: currentRound, score: score }} />
             )}
         </div>
     );

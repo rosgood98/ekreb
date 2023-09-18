@@ -7,12 +7,14 @@ const scramble = require('../src/services/Scramble');
 const app = express();
 
 describe('GET Random Word', () => {
+    // check external API endpoint
     it('should get a random word', () => {
         request(app)
-        .get("https://random-word-api.herokuapp.com/word")
-        .expect(200)
+            .get("https://random-word-api.herokuapp.com/word")
+            .expect(200);
     });
-    it('should fail to get a random word', function(done) {
+    // check invalid endpoint, expepct fail (400)
+    it('should fail to get a random word', (done) => {
         request(app)
         .get("https://random-word-api.herokuapp.com/getWord") // wrong endpoint
         .expect(400)
@@ -23,24 +25,20 @@ describe('GET Random Word', () => {
 describe('Scramble Word', () => {
     // check a scrambled word is not equal to the original
     it('should scramble a word', () => {
-        setTimeout(function() {
-            const originalWord = 'hello';
-            const scrambledWord = scramble(originalWord);
-            expect(scrambledWord).to.not.equal(originalWord);
-        });
+        const originalWord = 'hello';
+        const scrambledWord = scramble(originalWord);
+        expect(scrambledWord).to.not.equal(originalWord);
     });
     // check a scrambled word is equal to the original if the word is 1 char long
-    it('should scramble a 1 char word to be the same word', function(done) {
-            const originalWord = 'a';
-            const scrambledWord = scramble(originalWord);
-            expect(scrambledWord).to.equal(originalWord);
-            done();
-    }, 10000);
+    it('should scramble a 1 char word to be the same word', () => {
+        const originalWord = 'a';
+        const scrambledWord = scramble(originalWord);
+        expect(scrambledWord).to.equal(originalWord);
+    });
     // check a 2 char scrambled word is separate from the original
-    it('should scramble a 1 char word to be the same word', function(done) {
-            const originalWord = 'hi';
-            const scrambledWord = scramble(originalWord);
-            expect(scrambledWord).to.not.equal(originalWord);
-            done();
-    }, 100000);
+    it('should scramble a 1 char word to be the same word', () => {
+        const originalWord = 'hi';
+        const scrambledWord = scramble(originalWord);
+        expect(scrambledWord).to.not.equal(originalWord);
+    });
 });
