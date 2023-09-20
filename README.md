@@ -46,7 +46,7 @@ See below.
 
 First, `git clone` this repo.
 
-This project uses [concurrently](https://www.npmjs.com/package/concurrently) to simplify the process of installation and running. After cloning, navigate to the root directory. In terminal, enter `npm start`. This will start both the frontend and backend without requiring you to enter separate commands in both directories. The game should open automatically. If not, navigate to your default localhost (usually http://localhost:3000/).
+This project uses [concurrently](https://www.npmjs.com/package/concurrently) to simplify the process of installation and running. After cloning, navigate to the root directory. Run `npm install` to install concurrently. Then, run `npm start`. This will start both the frontend and backend without requiring you to enter separate commands in both directories. The game should open automatically. If not, navigate to your default localhost (usually http://localhost:3000/).
 
 ## Usage
 
