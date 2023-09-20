@@ -1,3 +1,6 @@
+// backend entry point
+
+// dependencies
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -5,6 +8,7 @@ const app = express();
 const fetchWordFromExternalAPI = require('./services/APIService');
 const scramble = require('./services/Scramble');
 
+// allow ports 8080 and 3000 to be used simultaneousl
 app.use(cors());
 const port = 8080;
 

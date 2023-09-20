@@ -1,3 +1,5 @@
+/* Styles for game page */
+
 .get-word-button {
     text-align: center;
     position: absolute;
@@ -27,6 +29,7 @@
     background-color: #F0EAD6;
     border-radius: 25px;
     width: 30%;
+    margin-top: 10px;
 }
 
 .game-description-text {
@@ -61,6 +64,7 @@
     border-radius: 25px;
     text-align: center;
     border: 1px gray;
+    cursor: text;
 }
 
 .input-bar[disabled] {
@@ -76,7 +80,7 @@ input, select, textarea {
     top: 70px;
     left: 0;
     right: 0;
-    height: 100px; /* Adjust the height to your desired value */
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,11 +105,11 @@ input, select, textarea {
 .round-tooltip {
     position: absolute;
     display: none;
-    background-color: #333;
+    background-color: rgb(61, 10, 244);
     color: #fff;
     padding: 5px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 20px;
     transition: opacity 0.3s;
 }
 
@@ -137,11 +141,11 @@ input, select, textarea {
 .length-tooltip {
     position: absolute;
     display: none;
-    background-color: #333;
+    background-color: rgb(61, 10, 244);
     color: #fff;
     padding: 5px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 20px;
     transition: opacity 0.3s;
 }
 
@@ -159,5 +163,5 @@ input, select, textarea {
     bottom: 50px;
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 24px;
 }

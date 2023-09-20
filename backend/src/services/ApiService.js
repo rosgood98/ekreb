@@ -14,5 +14,4 @@ async function fetchWordFromExternalAPI(length) {
   }
 }
 
-
 module.exports = fetchWordFromExternalAPI;

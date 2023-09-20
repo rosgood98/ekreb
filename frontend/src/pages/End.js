@@ -3,10 +3,13 @@ import { useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
 import '../styles/end.css';
 
+// End page
 function End(props) {
+    // get final round number and score
     const { round, score } = useParams();
 
     let guessClass = '';
+    // pick a color for final score depending how well user did
     if (score >= round / 2) {
         guessClass = 'green-text';
     } else {
@@ -24,6 +27,7 @@ function End(props) {
                         Rounds Played: {round}
                     </div>
                     <div>
+                        {/* conditional class based off score (>= 50% = green) */}
                         Correct Guesses: <span className={guessClass} > {score}</span>
                     </div>
                 </div>
@@ -32,7 +36,7 @@ function End(props) {
                 Thanks for playing!
             </div>
             <div className='footer-message'>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     );

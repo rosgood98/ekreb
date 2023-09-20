@@ -1,3 +1,6 @@
+// Backend unit tests
+
+// Dependencies
 const express = require('express');
 const chai = require('chai');
 const expect = chai.expect;
@@ -6,6 +9,7 @@ const scramble = require('../src/services/Scramble');
 
 const app = express();
 
+// testing API
 describe('GET Random Word', () => {
     // check external API endpoint
     it('should get a random word', () => {
@@ -13,15 +17,15 @@ describe('GET Random Word', () => {
             .get("https://random-word-api.herokuapp.com/word")
             .expect(200);
     });
-    // check invalid endpoint, expepct fail (400)
-    it('should fail to get a random word', (done) => {
+    // check invalid endpoint, expect fail (400)
+    it('should fail to get a random word', () => {
         request(app)
         .get("https://random-word-api.herokuapp.com/getWord") // wrong endpoint
         .expect(400)
-        done();
-    }, 100000);
+    });
 });
 
+// testing scrambler
 describe('Scramble Word', () => {
     // check a scrambled word is not equal to the original
     it('should scramble a word', () => {
