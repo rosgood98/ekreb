@@ -22,10 +22,10 @@ app.get('/word', async (req, res) => {
     const unscrambled = await fetchWordFromExternalAPI(length);
     console.log(unscrambled);
     const scrambled = await scramble(unscrambled);
-    res.json({ unscrambled: unscrambled, scrambled: scrambled });
+    res.json({unscrambled: unscrambled, scrambled: scrambled});
   } catch (error) {
     console.error('Error fetching word:', error);
-    res.status(500).json({ error: 'An error occurred while fetching the word' });
+    res.status(500).json({error: 'An error occurred while fetching the word'});
   }
 });
 

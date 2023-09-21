@@ -22,6 +22,11 @@ jobs:
           cd backend
           npm ci
 
+      - name: Lint and Fix
+        run: |
+          cd backend
+          npm run lint-fix || true
+
       - name: Run backend unit tests
         run: |
           cd backend
@@ -45,6 +50,11 @@ jobs:
           cd frontend
           npm install
           npm ci
+
+      - name: Lint and Fix
+        run: |
+          cd frontend
+          npm run lint-fix || true
 
       - name: Build frontend
         run: |

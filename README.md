@@ -31,7 +31,7 @@ Created for [Change++](https://www.changeplusplus.org/) at Vanderbilt University
 - Timer that dynamically adjusts depending on the length of the word that the user is guessing; adjusts color automatically based on the proportion of time remaining
 - Dynamically styled statistics dependent on user's performance
 - Robust error handling
-- The repository also includes a simple CI/CD process in `main_ci.yml`
+- The repository also includes a simple CI/CD process as well as a JS linter in `main_ci.yml`
 
 ## Getting Started
 
@@ -69,6 +69,7 @@ This project uses a number of dependencies. The following is a list of them incl
 - [Chai](https://www.chaijs.com/) and [Mocha](https://mochajs.org/) - testing frameworks for the backend of the app.
 - [Express](https://expressjs.com/) - to build out a small API on the backend.
 - [Cors](https://www.npmjs.com/package/cors) - middleware that allows interaction between frontend/backend and Express.js.
+- [ESLint](https://eslint.org/) - JS linter for frontend and backend.
 
 ## Next Steps
 
